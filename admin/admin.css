@@ -1,5 +1,7 @@
 :root{--ink:#171717;--muted:#6d6d6d;--line:#dedede;--bg:#f5f5f2;--paper:#fff;--accent:#19324a}
-*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;font-family:"Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 button,input,textarea,select{font:inherit}button{cursor:pointer}
 .login-shell{min-height:100vh;display:grid;place-items:center;padding:24px}
 .login-card{width:min(620px,100%);background:white;border:1px solid var(--line);padding:42px;border-radius:22px;box-shadow:0 22px 60px rgba(0,0,0,.06)}
