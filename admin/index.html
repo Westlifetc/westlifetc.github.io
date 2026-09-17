@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="admin.css">
 </head>
-<body data-admin-page="login">
+<body>
   <div class="login-shell">
     <section class="login-card">
       <p class="kicker">werassam ADMIN</p>
@@ -27,13 +27,13 @@
           <li>GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens로 이동합니다.</li>
           <li>Repository access에서 <b>westlifetc.github.io</b> 저장소만 선택합니다.</li>
           <li>Repository permissions → <b>Contents: Read and write</b> 권한을 줍니다.</li>
-          <li>생성된 토큰을 위 칸에 붙여넣습니다.</li>
+          <li>생성된 토큰은 이 페이지에만 입력하고, 다른 사람에게 보내지 마세요.</li>
         </ol>
-        <p class="small">토큰은 GitHub API 접속에만 사용됩니다. 공용 PC에서는 ‘기억하기’를 체크하지 마세요.</p>
+        <p class="small">토큰은 비밀번호처럼 취급하세요. 공용 PC에서는 ‘기억하기’를 체크하지 마세요.</p>
       </details>
       <p id="loginMsg" class="status"></p>
     </section>
   </div>
-  <script src="admin.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>
