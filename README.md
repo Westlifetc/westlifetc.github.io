@@ -1,21 +1,29 @@
-# 웨라쌤 포트폴리오 사이트
+# 웨라쌤 사이트 v2
 
-초등교육 · AI · 에듀테크 강의와 수업 기록을 위한 개인 포트폴리오 사이트입니다.
+이 버전은 GitHub Pages에서 동작하는 개인 포트폴리오 + 수업 기록 사이트입니다.
 
-## 파일 구성
-- `index.html` : 사이트 본문
-- `style.css` : 디자인
-- `script.js` : 모바일 메뉴와 연도 표시
+## 주요 기능
+- 대문 이미지 / 폰트 / 색상 / 소개 문구 관리
+- 강의 목록 추가·수정·삭제
+- 수업 기록 작성·수정·삭제
+- 대표 이미지 업로드
+- 강의/수업 후기 관리
+- `/admin/` 관리자 화면
+- 별도 서버나 유료 데이터베이스 없이 GitHub 저장소에 직접 저장
 
-## GitHub Pages에 올리는 방법
-1. GitHub에 로그인합니다.
-2. 새 저장소를 만듭니다.
-3. 저장소 이름을 `본인아이디.github.io` 로 지정하면 가장 간단합니다.
-4. 이 폴더의 `index.html`, `style.css`, `script.js`를 저장소 최상위에 업로드합니다.
-5. 저장소의 Settings → Pages에서 배포 상태를 확인합니다.
+## 설치
+기존 `westlifetc.github.io` 저장소의 파일을 이 폴더 내용으로 교체합니다.
+폴더 구조를 그대로 유지해야 합니다.
 
-기본 주소는 보통 `https://본인아이디.github.io` 형태입니다.
+## 관리자
+사이트 배포 후 `https://westlifetc.github.io/admin/` 로 접속합니다.
 
-## 내용 수정
-`index.html` 파일의 텍스트만 바꾸면 대부분의 내용 수정이 가능합니다.
-수업 사례와 후기 부분은 현재 비워두었으며, 이후 카드 형태로 추가할 수 있습니다.
+처음 한 번 GitHub Fine-grained personal access token이 필요합니다.
+대상 저장소는 `westlifetc.github.io` 하나만 선택하고,
+Repository permissions의 Contents 권한을 Read and write로 설정합니다.
+
+관리자 페이지의 안내를 따라 토큰을 넣으면 이후 사이트 설정과 글쓰기를 관리자 화면에서 할 수 있습니다.
+
+## 보안
+관리자 토큰은 브라우저의 sessionStorage 또는 사용자가 선택한 경우 localStorage에만 저장됩니다.
+공용 PC에서는 '이 브라우저에 기억하기'를 사용하지 마세요.

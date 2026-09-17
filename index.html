@@ -1,157 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="웨라쌤 - 초등교육, AI, 에듀테크 강의와 수업 기록" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="웨라쌤 - 초등교육, AI, 에듀테크 강의와 수업 기록">
   <title>웨라쌤 | 초등교육 · AI · 에듀테크</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">웨라쌤</a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#about">소개</a>
-        <a href="#lectures">강의</a>
-        <a href="#classes">수업 사례</a>
-        <a href="#reviews">후기</a>
-        <a href="#contact">문의</a>
-      </nav>
-      <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="./" data-site-name>웨라쌤</a>
+    <nav>
+      <a href="#lectures">강의</a>
+      <a href="archive.html">수업기록</a>
+      <a href="#about">소개</a>
+      <a href="#contact">문의</a>
+    </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow">WERA TEACHER PORTFOLIO</p>
-        <h1>초등교육 × AI × 에듀테크</h1>
-        <p class="hero-copy">
-          새로운 기술을 수업에 자연스럽게 연결하고,<br />
-          교실에서 실제로 활용할 수 있는 교육을 고민합니다.
-        </p>
+    <section class="hero" id="home">
+      <div class="hero-media" id="heroMedia" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-eyebrow>초등교육 · AI · 에듀테크</p>
+        <h1 data-hero-title>배우고, 만들고,<br>교실에서 써봅니다.</h1>
+        <p class="hero-desc" data-hero-description></p>
         <div class="hero-actions">
-          <a class="btn primary" href="#lectures">강의 살펴보기</a>
-          <a class="btn ghost" href="#contact">강의 문의</a>
+          <a class="btn primary" href="#lectures">강의 보기</a>
+          <a class="btn text" href="archive.html">수업 기록 보기 <span>↗</span></a>
         </div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true">
+        <span>WERA</span>
+        <small>TEACHER ARCHIVE</small>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container split">
+    <section class="manifesto" id="about">
+      <p class="section-label">ABOUT</p>
+      <div class="manifesto-grid">
+        <h2 data-about-title>기술보다 수업을 먼저 생각합니다.</h2>
+        <p data-about-text></p>
+      </div>
+    </section>
+
+    <section class="lectures" id="lectures">
+      <div class="section-head">
         <div>
-          <p class="section-kicker">ABOUT</p>
-          <h2>안녕하세요, 웨라쌤입니다.</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            초등교육 현장에서 AI와 에듀테크를 활용한 수업을 연구하고 실천하고 있습니다.
-            기술 자체보다, 교사와 학생이 실제 수업에서 어떻게 더 쉽게 활용할 수 있는지를 중요하게 생각합니다.
-          </p>
-          <p>
-            이곳에는 제가 진행할 수 있는 강의와 수업 사례, 그리고 교육 현장에서의 기록을 차곡차곡 담아가려고 합니다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="lectures" class="section alt">
-      <div class="container">
-        <p class="section-kicker">LECTURES</p>
-        <div class="section-heading">
+          <p class="section-label">LECTURES</p>
           <h2>가능한 강의</h2>
-          <p>학교와 교사 연수 현장에서 바로 활용할 수 있는 내용을 중심으로 구성합니다.</p>
         </div>
-
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-number">01</div>
-            <h3>하이러닝 서·논술형 평가 강의</h3>
-            <p>
-              하이러닝을 활용하여 서·논술형 평가를 설계하고 운영하는 방법을 다룹니다.
-              평가 문항 구성부터 학생 응답 확인과 피드백까지 실제 활용 중심으로 안내합니다.
-            </p>
-            <span class="tag">평가 · 하이러닝</span>
-          </article>
-
-          <article class="card">
-            <div class="card-number">02</div>
-            <h3>캔바 에듀테크 강의</h3>
-            <p>
-              캔바를 활용해 수업 자료, 학생 활동 결과물, 발표 자료 등을 효율적으로 제작하는 방법을 소개합니다.
-              교사가 바로 적용할 수 있는 실전 기능을 중심으로 구성합니다.
-            </p>
-            <span class="tag">캔바 · 에듀테크</span>
-          </article>
-
-          <article class="card">
-            <div class="card-number">03</div>
-            <h3>AI 엔트리 코딩 강의</h3>
-            <p>
-              엔트리와 AI 기능을 활용해 학생들이 쉽고 재미있게 코딩을 경험할 수 있도록 수업을 설계합니다.
-              초등 교실에 맞는 활동과 프로젝트 예시를 중심으로 진행합니다.
-            </p>
-            <span class="tag">AI · 엔트리 · 코딩</span>
-          </article>
-        </div>
+        <p>연수와 강의는 실제 교실에서 바로 활용할 수 있는 내용을 중심으로 구성합니다.</p>
       </div>
+      <div class="lecture-list" id="lectureList"></div>
     </section>
 
-    <section id="classes" class="section">
-      <div class="container">
-        <p class="section-kicker">CLASS ARCHIVE</p>
-        <div class="section-heading">
-          <h2>수업 사례</h2>
-          <p>직접 운영한 수업과 프로젝트를 하나씩 기록해 나갈 공간입니다.</p>
-        </div>
-
-        <div class="placeholder-box">
-          <p class="placeholder-title">수업 기록을 준비하고 있습니다.</p>
-          <p>
-            앞으로 실제 수업 사례, 학생 활동, 수업 자료와 느낀 점을 이곳에 차곡차곡 추가할 예정입니다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews" class="section alt">
-      <div class="container">
-        <p class="section-kicker">REVIEWS</p>
-        <div class="section-heading">
-          <h2>강의 · 수업 후기</h2>
-          <p>강의와 수업을 함께한 분들의 이야기를 담아갈 예정입니다.</p>
-        </div>
-
-        <div class="review-placeholder">
-          <div class="quote-mark">“</div>
-          <p>후기가 쌓이면 이 공간에 하나씩 추가할 수 있습니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-box">
+    <section class="archive-preview">
+      <div class="section-head">
         <div>
-          <p class="section-kicker">CONTACT</p>
-          <h2>강의와 교육 활동에 대해<br />편하게 연락 주세요.</h2>
-          <p>
-            연수, 강의, 교육 협업과 관련된 문의를 받고 있습니다.
-          </p>
+          <p class="section-label">CLASS ARCHIVE</p>
+          <h2>최근 수업 기록</h2>
         </div>
-        <div class="contact-action">
-          <span class="contact-label">EMAIL</span>
-          <a href="mailto:westlifetc@gmail.com">westlifetc@gmail.com</a>
+        <a class="all-link" href="archive.html">전체 보기 ↗</a>
+      </div>
+      <div id="recentPosts" class="posts-grid"></div>
+      <div id="emptyPosts" class="empty-state">
+        <strong>아직 첫 기록을 기다리고 있습니다.</strong>
+        <p>관리자 화면에서 첫 수업 사례를 작성하면 이곳에 자동으로 나타납니다.</p>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviewsSection">
+      <div class="section-head">
+        <div>
+          <p class="section-label">REVIEWS</p>
+          <h2>강의 · 수업 후기</h2>
+        </div>
+      </div>
+      <div id="reviewsList" class="reviews-list"></div>
+      <div id="emptyReviews" class="empty-review">후기가 쌓이면 이곳에 하나씩 기록됩니다.</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-label">CONTACT</p>
+      <div class="contact-grid">
+        <h2>함께할 교육 활동이 있다면<br>편하게 연락 주세요.</h2>
+        <div>
+          <p>강의 · 연수 · 교육 협업 문의</p>
+          <a id="emailLink" href="mailto:westlifetc@gmail.com">westlifetc@gmail.com ↗</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> 웨라쌤. All rights reserved.</p>
-      <a href="#home">맨 위로 ↑</a>
-    </div>
+    <span>© <span id="year"></span> <span data-site-name>웨라쌤</span></span>
+    <span>Elementary Education · AI · EdTech</span>
   </footer>
 
   <script src="script.js"></script>

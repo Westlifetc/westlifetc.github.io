@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>수업 기록 | 웨라쌤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="archive">
+  <header class="topbar">
+    <a class="brand" href="./" data-site-name>웨라쌤</a>
+    <nav>
+      <a href="./#lectures">강의</a>
+      <a href="archive.html" class="active">수업기록</a>
+      <a href="./#about">소개</a>
+      <a href="./#contact">문의</a>
+    </nav>
+  </header>
+  <main>
+    <section class="archive-hero">
+      <p class="section-label">CLASS ARCHIVE</p>
+      <h1>수업 기록</h1>
+      <p>직접 운영한 수업과 프로젝트, 그리고 그 과정에서 남긴 생각을 기록합니다.</p>
+    </section>
+    <section class="archive-page">
+      <div class="archive-tools">
+        <div id="categoryFilters" class="filters"></div>
+        <span id="postCount"></span>
+      </div>
+      <div id="archivePosts" class="posts-grid archive-grid"></div>
+      <div id="archiveEmpty" class="empty-state">
+        <strong>아직 등록된 수업 기록이 없습니다.</strong>
+        <p>첫 글을 작성하면 이곳에 차곡차곡 쌓입니다.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <span>© <span id="year"></span> <span data-site-name>웨라쌤</span></span>
+    <span>Elementary Education · AI · EdTech</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
