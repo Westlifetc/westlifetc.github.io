@@ -9,7 +9,7 @@
   "accent": "#19324a",
   "background": "#f4f1ea",
   "font": "pretendard",
-  "heroImage": "",
+  "heroImage": "/assets/uploads/hero-1789644399857.png",
   "heroStyle": "editorial",
-  "showReviews": true
+  "showReviews": false
 }
